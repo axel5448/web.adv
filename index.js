@@ -1,6 +1,6 @@
 
 // Ajustá la fecha del evento aquí
-const fechaCumple = new Date("2025-06-27T17:16:00").getTime();
+const fechaCumple = new Date("2025-06-27T16:00:00").getTime();
 const countdown = document.getElementById("countdown");
 
 const intervalo = setInterval(() => {
