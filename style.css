@@ -1,0 +1,79 @@
+:root {
+  --rojo:     #ff3b30;
+  --azul:     #fa0000;
+  --amarillo: #f5c6c6;
+  --blanco:   #ffffff;
+  --negro-t:  rgba(0, 0, 0, 0.6);
+}
+
+/* Fondo: moto roja */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-image: url('https://cdn.pixabay.com/photo/2015/01/15/16/17/motorcycle-600350_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  text-align: center;
+}
+
+.invitacion {
+  background: var(--negro-t);
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 720px;
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  position: relative;
+}
+
+.invitacion::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 24px 24px 0 0;
+  background: linear-gradient(90deg, var(--rojo) 0%, var(--amarillo) 50%, var(--azul) 100%);
+}
+
+.btn-ubicacion {
+  padding: 15px 30px;
+  font-size: 17px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(145deg, var(--amarillo), var(--azul));
+  color: var(--blanco);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-ubicacion:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.cuenta-regresiva {
+  font-size: 22px;
+  margin: 24px 0;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.imagenes-motos img {
+  width: 180px;
+  margin: 18px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+.imagenes-motos img:hover {
+  transform: scale(1.05);
+}
+
+.moto-azul    { border: 4px solid var(--azul);    box-shadow: 0 0 15px var(--azul);    }
+.moto-amarilla{ border: 4px solid var(--amarillo);box-shadow: 0 0 15px var(--amarillo);}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación de Cumpleaños</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="invitacion">
+    <h1>¡Estás invitado al cumpleaños de Santino!</h1>
+    <p>Santino cumple 11 años y queremos celebrarlo contigo!</p>
+
+    <div class="cuenta-regresiva" id="countdown"></div>
+
+    <button class="btn-ubicacion"
+            onclick="window.open('https://maps.app.goo.gl/pTDP5wyzRCaJKxzz9', '_blank')">
+      Ver ubicación de la fiesta
+    </button>
+
+    <div class="imagenes-motos">
+      <!-- Imagen moto azul -->
+      <img src="IMG/enduro_blue_SINF.png" 
+           alt="Moto azul" class="moto-azul" />
+
+      <!-- Imagen moto amarilla -->
+      <img src="IMG/enduro_amarilla_SINF.png" 
+           alt="Moto amarilla" class="moto-amarilla" />
+    </div>
+
+    <div class="imagen moto">
+      <!-- Aquí puedes agregar conos o logos si querés -->
+       <img src="IMG/enduro_red_SINF.png">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
